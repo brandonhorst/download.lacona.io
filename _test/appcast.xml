@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Lacona Changelog</title>
+    <link>https://lacona-download.firebaseapp.com/appcast.xml</link>
+    <description>Most recent changes with links to updates</description>
+    <language>en</language>
+      <item>
+        <title>Public Beta 12</title>
+        <description>
+          <![CDATA[
+<h1 id="public-beta-13-0-10-1-">Public Beta 13 (0.10.1)</h1>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug that could cause crashes if some running applications did not have bundle identifiers</li>
+<li>Fix a bug with activating and quitting running applications with whitespace in their titles</li>
+<li>The lacona addon log will now be appended to rather than overwritten with each error, making addon development easier</li>
+<li>Fix the <code>lock computer</code> command</li>
+<li>Ensure that the website link appears for addons that are not yet installed</li>
+<li>Ensure that author name appears for addons that have been installed</li>
+<li>Fix a bug that could result in Lacona not launching properly if certain Network devices were disabled or the hosts file was configured strangely</li>
+<li>Installation and Uninstallation failures will now be reported as alerts, so there is no need to search through the console logs</li>
+<li>The &quot;Check for Updates&quot; button on the Addons will be re-enabled if errors occur</li>
+<li>Fix a crash that could occur if attempting to install/uninstall multiple addons at the same time</li>
+<li>Vertically center the keyboard hints on the right side of options, could potentially fix a display bug on some external monitors</li>
+</ul>
+<h1 id="public-beta-12-0-10-0-">Public Beta 12 (0.10.0)</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Add the ability to download and install addons published to npm. Check out the <a href="https://docs.lacona.io">documentation for writing your own addons!</a>.</li>
+<li>Introduce small icons for certain features (Apps, Contacts, Bookmarks, Preference Panes, Contacts)</li>
+<li>Add the Calculate command, which can do basic arithmetic and unit conversions. For a list of features, see <a href="http://mathjs.org/">MathJS</a>. Results appear in a popover window.</li>
+<li>Add the Define command, which looks up words in the system dictionary. Currently, only the Oxford English Dictionary is supported.</li>
+<li>Add commands to Move, Delete, Copy, and Reveal files and folders (thank you to @rltbennett)</li>
+<li>Added a fallthrough for Calculate</li>
+<li>You can now open Apps using some common alternative names (e.g. Chrome -&gt; Google Chrome, iMessage -&gt; Messages). If there are more apps with alternative names that are not supported, please <a href="https://github.com/laconalabs/LaconaApp/issues">submit an issue</a>.</li>
+<li>Introduce the ability to open Volumes</li>
+<li>Add qualifiers to relationships, both by label (my brother (Mobile)) and by name (my brother (Aaron))</li>
+<li>Add a small introductory popover on first launch, explaining how to open the Lacona bar and preferences</li>
+<li>Opening Lacona from Finder or the Dock will now bring up the Lacona bar</li>
+<li>You can now toggle multiple settings with the same command (&quot;turn off wifi and bluetooth&quot;)</li>
+<li>The Mute and Do Not Disturb commands now support a time duration (&quot;mute for 10 minutes&quot;)</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Switch the underlying API to use Node.js instead of JavascriptCore. Improved performance for all commands. May require addon changes.</li>
+<li>Switched <code>lacona-api</code> to use Promises and Observables more consistently - may require addon changes.</li>
+<li>Updated the underlying elliptical engine, which has a few minor changes to better support qualifiers and annotations. May require addon changes.</li>
+<li>Shrank the text and simplified the visual style to allow popover previews and icons to better fit with the flow of content</li>
+<li>The Keyboard Shortcut can no longer be set to to Shift+[Letter/Number/Punctuation], as those are normal typing characters. </li>
+<li>Add a brief description to the Keyboard Shortcut setting</li>
+<li>Change the Preferences styling to fit more in line with OSX</li>
+<li>Remove the Right Click menu from Preferences and Lacona Options</li>
+<li>Changed the way that Preferences are saved on disk</li>
+<li>Switched to using Service Management for Launch at Login functionality</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a crash when adding an invalid Application name to Applications</li>
+<li>Fix a bug when attempting to remove certain settings that have defaults.</li>
+<li>Relationships will now work even if the name has diacritical marks.</li>
+</ul>
+<h1 id="public-beta-11-0-9-0-">Public Beta 11 (0.9.0)</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Lacona can now quit menu bar apps</li>
+<li>Added the <code>relaunch</code> command (works with Dock and Menu Bar apps)</li>
+<li>API: Addons can now use <code>callNode</code> to make calls out to Node js, where they can use Node modules like <code>fs</code> and <code>https</code>.</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Show all entries for certain commands before any characters have been input (eject, switch to, quit)</li>
+<li>Add <code>activate</code> as a synonym for <code>switch to</code></li>
+<li>Enable fuzzy matching for many more commands</li>
+<li>Visual: Slightly decrease shadow</li>
+<li>API: Split File and Directory into two distinct phrases (rather than File encompassing both)</li>
+<li>API: RunningApplication results have a new property: <code>activiationPolicy</code>, either &quot;regular&quot;, &quot;accessory&quot;, or &quot;prohibited&quot;</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug that could clear command settings with every relaunch</li>
+<li>Fix a bug where RunningApplications, Contacts, and Volumes would not be updated if they changed after Lacona launch</li>
+<li>API: Fix a bug with <code>quitApplication</code> not calling the callback</li>
+</ul>
+<h1 id="public-beta-10-0-8-1-">Public Beta 10 (0.8.1)</h1>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug that would cause silent failures if the user had never used Lacona before</li>
+</ul>
+<h1 id="public-beta-9-0-8-0-">Public Beta 9 (0.8.0)</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Add limited support for developer addons</li>
+<li>Add the &quot;reload addons&quot; Applescript command</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug with &quot;toggle Do Not Disturb&quot;</li>
+<li>Fix a display bug visible on Retina displays</li>
+</ul>
+<h1 id="public-beta-8-0-7-0-">Public Beta 8 (0.7.0)</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Added the &quot;open Lacona Preferences&quot; command (this does the same thing as CMD+,)</li>
+<li>Added support for &quot;qualifiers&quot; - a way of unambiguously specifying ambiguous commands. Try the <code>call</code> command for a contact with multiple phone numbers.</li>
+<li>The <code>open</code> command can now open Contacts, which will open in the Contacts application</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug where entering an empty string on the settings page could revert data to the defaults</li>
+<li>Fix a bug where &quot;search <engine> for <query>&quot; was not ignoring the word &quot;for&quot;</li>
+<li>Fix two separate bugs that resulted in certain commands were not presenting all available options</li>
+<li>Relationship-Name linking was made much more robust, so it now accepts names with spaces in them</li>
+<li>You can no longer open multiple preference panes with a single command (which never worked to begin with)</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Improve text rendering quality on some systems</li>
+</ul>
+<h1 id="public-beta-7-0-6-">Public Beta 7 (0.6)</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Added the ability to start Facetime Audio calls</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Do not hijack modifier+arrow key combinations (like Command+Left)</li>
+<li>Changes to Applications settings will now take effect immediately</li>
+<li>Fix a bug with opening &quot;~/*&quot; files</li>
+<li>Fix a crash when typing quotation marks</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Reworked everything under-the-hood using <a href="http://elliptical.laconalabs.com/">elliptical</a>, for improved performance and (future) extensibility</li>
+<li>Cleaned up the language for making calls, texts, emails, facetime calls, and facetime audio calls</li>
+<li>Changed the colorization of &quot;time of day&quot; and &quot;folder&quot;</li>
+<li>Due to under-the-hood changes, nothing works when running outside of the Applications directory</li>
+</ul>
+<h1 id="public-beta-6-0-5-">Public Beta 6 (0.5)</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Added the Lacona Preferences Page</li>
+<li>Added the ability to manage the list of directories to search for applications</li>
+<li>Added the ability to customize Lacona&#39;s search engines</li>
+<li>Added the ability to hide the menubar icon</li>
+<li>While Lacona is open, pressing Command+q quits it</li>
+<li>While Lacona is open, pressing Command+, now opens the Preferences</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug where iTunes songs missing some info could result in &#39;play undefined&#39; being a valid command</li>
+<li>Fix a bug where using a quotation mark in an &quot;open&quot; command would crash Lacona</li>
+<li>Allow Lacona to find files whose names have diacritical marks in them</li>
+<li>&quot;schedule x next Friday to Sunday&quot; would previously fail</li>
+<li>Fix a bug which could cause crashes on startup if launched outside /Applications more than once</li>
+<li>Fix a bug that would result in executing the wrong command if the user typed and pressed enter very quickly</li>
+<li>Removed some unnecessary files from Resources</li>
+</ul>
+<hr>
+<h1 id="public-beta-5-0-4-2-">Public Beta 5 (0.4.2)</h1>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fixed a bug where &quot;open lacona.io and &lt;...&gt;&quot; would sort before &quot;open lacona.io&quot;</li>
+<li>Reverted a broken implementation of &quot;call/email/text/facetime&quot; to 0.4 version</li>
+</ul>
+<hr>
+<h1 id="public-beta-4-0-4-1-">Public Beta 4 (0.4.1)</h1>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Lacona would previously ignore some applications/bookmarks if you had more than 100</li>
+<li>In version 0.4, Lacona could not open Apps/Pref Panes/Volumes and Files/URLs in the same command - now it can again</li>
+<li>Auto-update library (Sparkle) updated to version 1.13.1, to fix <a href="https://github.com/sparkle-project/Sparkle/releases/tag/1.13.1">a recently-discovered security vulnerability</a>.</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>If running outside of the Applications directory, Lacona will ask to move itself. Outside of the Applications directory, OSX does not allow apps to access Contacts, Calendar, etc...</li>
+<li>Lacona now differentiates between &quot;files&quot; and &quot;folders&quot;.</li>
+<li>Lacona can now open Applications that live outside the /Applications directory. To limit clutter, it is limited to these directories: <ul>
+<li><code>/Applications</code> - System, App Store, and normal Apps</li>
+<li><code>/Applications/Xcode.app/Contents/Applications</code> - Developer utilities, if Xcode is installed</li>
+<li><code>/System/Library/CoreServices/Applications</code> - System utilities</li>
+<li><code>~/Applications</code> - Chrome Apps, among other things</li>
+<li><code>/usr/local/Cellar</code> - Apps installed via Homebrew</li>
+<li><code>/opt/homebrew-cask/Caskroom</code> - Apps installed via Homebrew Cask</li>
+<li><code>Finder.app</code></li>
+</ul>
+</li>
+<li>In the &quot;open&quot; command, Applications and Preference panes will always appear above files, even if the beginning of the name is not matched.</li>
+<li>File searching performance improved dramatically.</li>
+</ul>
+<hr>
+<h1 id="public-beta-3-0-4-">Public Beta 3 (0.4)</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Added the &quot;schedule&quot; command - you can now schedule events on the default calendar using natural language</li>
+<li>You can now open files by name, just like a Spotlight search</li>
+<li>You can now open files by entering a file path</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Fallthroughs are now displayed without a border, to reduce visual complexity</li>
+<li>Lacona will now appear on the active display, rather than always the first one</li>
+<li>Lacona will now display lower on most screens (centered vertically, if there were 9 rows of data displayed)</li>
+<li>If you are setting an F-key as the Keyboard Shortcut, you do not need to use a modifier (though you still may)</li>
+<li>The &quot;search <query> on <engine>&quot; command now sorts above the &quot;open <url>&quot; command, to make fallthrough searching slightly easier.</li>
+<li>Command continuation information (in repeats and sequences) is not displayed for complete outputs. Use <code>{Right}</code> or <code>{Tab}</code> to see continuations</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Lacona will now resize automatically if the display size changes</li>
+<li>The &quot;shutdown&quot; command is now functional</li>
+<li>The &quot;eject all&quot; command is now functional</li>
+<li>Plug a memory leak with Spotlight queries</li>
+</ul>
+<hr>
+<h1 id="public-beta-2-0-3-1-">Public Beta 2 (0.3.1)</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Allow Lacona to control Light/Dark mode (&quot;enable dark mode&quot;, &quot;toggle light mode&quot;...)</li>
+<li>Add 3 new themes (light, light-minimal, and dark-minimal)</li>
+<li>The Lacona theme can be set to automatically mirror the OS theme (light/dark mode)</li>
+<li>Switched to &quot;One&quot; color scheme, based on Atom One, for improved light-mode visibility</li>
+<li>Allow vim-style (hjkl) movement when holding the control key</li>
+<li>Added an About panel</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Thin down the status menu icon a bit</li>
+<li>Lacona width is now limited to 820px maximum, to help people with large screens</li>
+<li>Even up the space between fallthroughs and the rest of the words</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Prevent &quot;rubber band&quot; effect that moves the entire Lacona window when scrolling past edges</li>
+<li>Fix a bug where Lacona could be displayed but not focused</li>
+<li>Prevent Lacona from stealing the current App&#39;s focus</li>
+<li>Ensure that &quot;tonight&quot; in &quot;remind me to eat tonight&quot; is properly colorized</li>
+<li>Lacona refuses to launch on OSX &lt;= 10.10</li>
+</ul>
+<hr>
+<h1 id="public-beta-1-0-3-">Public Beta 1 (0.3)</h1>
+<ul>
+<li>Initial Beta Launch</li>
+</ul>
+          ]]>
+        </description>
+        <pubDate>Mon, 30 May 2016 17:30:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/0.10.1/LaconaBeta.zip" sparkle:version="0.10.1" sparkle:shortVersionString="Public Beta 13" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCe6342hBX9Xwcy7K2HvqocMgXAtQIVALn3nhaKLi7Ryk0OTKYMXAZkbZJ7" />
+      </item>
+  </channel>
+</rss>
