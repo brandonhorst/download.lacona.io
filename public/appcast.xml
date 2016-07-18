@@ -6,7 +6,7 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>Public Beta 12</title>
+        <title>Public Beta 13</title>
         <description>
           <![CDATA[
 <h1 id="public-beta-13-0-10-1-">Public Beta 13 (0.10.1)</h1>
@@ -21,7 +21,8 @@
 <li>Fix a bug that could result in Lacona not launching properly if certain Network devices were disabled or the hosts file was configured strangely</li>
 <li>Installation and Uninstallation failures will now be reported as alerts, so there is no need to search through the console logs</li>
 <li>The &quot;Check for Updates&quot; button on the Addons will be re-enabled if errors occur</li>
-<li>Fix a crash that could occur if attempting to install/uninstall multiple addons at the same time</li>
+<li>Fix a crash that could occur if attempting to install multiple addons at the same time</li>
+<li>Fix an issue that could get an node_modules into an inconsistent state if multiple addons were installed and uninstalled at the same time</li>
 <li>Vertically center the keyboard hints on the right side of options, could potentially fix a display bug on some external monitors</li>
 </ul>
 <h1 id="public-beta-12-0-10-0-">Public Beta 12 (0.10.0)</h1>
@@ -245,7 +246,7 @@
           ]]>
         </description>
         <pubDate>Mon, 30 May 2016 17:30:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/0.10.1/LaconaBeta.zip" sparkle:version="0.10.1" sparkle:shortVersionString="Public Beta 13" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCe6342hBX9Xwcy7K2HvqocMgXAtQIVALn3nhaKLi7Ryk0OTKYMXAZkbZJ7" />
+        <enclosure url="https://download.lacona.io/packages/0.10.1/LaconaBeta.zip" sparkle:version="0.10.1" sparkle:shortVersionString="Public Beta 13" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFG8FoEH/JXj+oosXB269VsZbpfkmAhUAtJl2Yk1AQMglJ7kP+SdMOQ84f04=" />
       </item>
   </channel>
 </rss>
