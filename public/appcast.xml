@@ -9,6 +9,21 @@
         <title>Public Beta 12</title>
         <description>
           <![CDATA[
+<h1 id="public-beta-13-0-10-1-">Public Beta 13 (0.10.1)</h1>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug that could cause crashes if some running applications did not have bundle identifiers</li>
+<li>Fix a bug with activating and quitting running applications with whitespace in their titles</li>
+<li>The lacona addon log will now be appended to rather than overwritten with each error, making addon development easier</li>
+<li>Fix the <code>lock computer</code> command</li>
+<li>Ensure that the website link appears for addons that are not yet installed</li>
+<li>Ensure that author name appears for addons that have been installed</li>
+<li>Fix a bug that could result in Lacona not launching properly if certain Network devices were disabled or the hosts file was configured strangely</li>
+<li>Installation and Uninstallation failures will now be reported as alerts, so there is no need to search through the console logs</li>
+<li>The &quot;Check for Updates&quot; button on the Addons will be re-enabled if errors occur</li>
+<li>Fix a crash that could occur if attempting to install/uninstall multiple addons at the same time</li>
+<li>Vertically center the keyboard hints on the right side of options, could potentially fix a display bug on some external monitors</li>
+</ul>
 <h1 id="public-beta-12-0-10-0-">Public Beta 12 (0.10.0)</h1>
 <h2 id="new-features">New Features</h2>
 <ul>
@@ -230,7 +245,7 @@
           ]]>
         </description>
         <pubDate>Mon, 30 May 2016 17:30:00 EST</pubDate>
-        <enclosure url="https://lacona-download.firebaseapp.com/packages/0.10.0/LaconaBeta.zip" sparkle:version="0.10.0" sparkle:shortVersionString="Public Beta 12" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MCwCFHp4Rci5CSq0D/x3f5G2Xcg34WdQAhQeMhAKJxAo0l571CdQDjanVDvR5Q==" />
+        <enclosure url="https://download.lacona.io/packages/0.10.1/LaconaBeta.zip" sparkle:version="0.10.1" sparkle:shortVersionString="Public Beta 13" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCe6342hBX9Xwcy7K2HvqocMgXAtQIVALn3nhaKLi7Ryk0OTKYMXAZkbZJ7" />
       </item>
   </channel>
 </rss>
