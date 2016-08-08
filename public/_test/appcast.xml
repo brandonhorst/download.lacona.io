@@ -2,13 +2,53 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Lacona Changelog</title>
-    <link>https://lacona-download.firebaseapp.com/appcast.xml</link>
+    <link>https://download.lacona.io/appcast.xml</link>
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>Public Beta 12</title>
+        <title>1.0.0</title>
         <description>
           <![CDATA[
+<h1 id="1-0-0">1.0.0</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Payment is now enabled. All built-in commands are free to use forever. Running commands from Addons will have a slight delay and prompt for purchase. Once purchase has been validated, these messages will go away.</li>
+<li>Add the &quot;Shortcuts&quot; section to config, which allows two new feature: Aliases and Prefixes.<ul>
+<li>Aliases are user-defined ways to cut down on typing. They are replacements that can replace either the beginning of commands (&#39;o safari&#39; -&gt; &#39;open safari&#39;) or entire commands (&#39;twifi&#39; -&gt; &#39;toggle wifi for 1 second&#39;)</li>
+<li>Prefixes have always existed - they are the commands that are selected by default if you do not enter a verb (&#39;safari&#39; -&gt; &#39;open safari&#39;). Now, they are user-configurable. There are 4 by default: &#39;open&#39;, &#39;search&#39;, &#39;look up&#39;, and &#39;calculate&#39;.</li>
+</ul>
+</li>
+<li>Add &quot;Large Fonts&quot; theme, which increases the font size (to pre-0.10.0 size). Very useful on large monitors</li>
+<li>You can now specify a Reminder List for the &quot;remind me to&quot; command, and a Calendar for the &quot;schedule&quot; command. Additionally, added the alternate &quot;add milk to shopping list&quot; syntax, which is a synonym for &quot;remind me to&quot;.</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Dramatic performance improvements across the board, especially for fallthrough, files, and dates</li>
+<li>Style changes and continued simplifications, to better fit into the larger macOS environment</li>
+<li>Calculate now does math asyncronously, which improves fallthrough performance, especially for searching.</li>
+<li>Add links to the <a href="https://www.lacona.io/terms">Terms of Use</a> and <a href="https://www.lacona.io/privacy">Privacy Policy</a> to the About page.</li>
+<li>Ignore starting spaces and multiple spaces</li>
+<li>&quot;Define&quot; is now only available for dictionary words - it will not do automatic truncation/adjustment</li>
+<li>&quot;Look up&quot; is now a synonym for &quot;define&quot;</li>
+<li>Add &quot;look up&quot; as a fallthrough (user-configurable)</li>
+<li>Applications now have qualifiers, which fixes problems if you have multiple applications in different directories with the same name</li>
+<li>Allow the word form of numbers to be used in dates (&quot;remind me to eat in an hour&quot;, &quot;schedule party for march first&quot;)</li>
+<li>Increase the transparency of inactive modifiers in the Keyboard Shortcut setting</li>
+<li>&quot;Eject <Volume>&quot; and &quot;eject all&quot; will now show a notification on success or failure</li>
+<li>Change the color of the &quot;reminder title&quot; argument, so it does not blend in with dates and times</li>
+<li>Hide the &quot;disable/enable&quot; button while uninstalling addons.</li>
+<li>Scheduling all-day events now creates an alarm at 9am the day before the event, rather than 11:45pm the day before.</li>
+<li>Make the initial tutorial popover less ugly.</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug that could cause options and the preview popover to become invisble, but their shadow to persist</li>
+<li>Fix &quot;open Lacona Preferences&quot;</li>
+<li>Reminders created with lacona will now display their due date in the iOS Reminders App</li>
+<li>Fix a bug that did not allow &quot;schedule x from today to tomorrow&quot;</li>
+<li>Force Lacona&#39;s built-in NPM tool to use <code>~/.lacona-npm</code> as the cache directory, rather than the default <code>~/.npm</code>. This fixes some situations where pre-existing npm permissions issues could cause Addon installation/uninstallation failures for Lacona. Also, prevent other undesired interactions with npm config files.</li>
+<li>Fix a potential crash when editing theme settings for the first time.</li>
+</ul>
 <h1 id="public-beta-13-0-10-1-">Public Beta 13 (0.10.1)</h1>
 <h2 id="fixes">Fixes</h2>
 <ul>
@@ -21,7 +61,8 @@
 <li>Fix a bug that could result in Lacona not launching properly if certain Network devices were disabled or the hosts file was configured strangely</li>
 <li>Installation and Uninstallation failures will now be reported as alerts, so there is no need to search through the console logs</li>
 <li>The &quot;Check for Updates&quot; button on the Addons will be re-enabled if errors occur</li>
-<li>Fix a crash that could occur if attempting to install/uninstall multiple addons at the same time</li>
+<li>Fix a crash that could occur if attempting to install multiple addons at the same time</li>
+<li>Fix an issue that could get an node_modules into an inconsistent state if multiple addons were installed and uninstalled at the same time</li>
 <li>Vertically center the keyboard hints on the right side of options, could potentially fix a display bug on some external monitors</li>
 </ul>
 <h1 id="public-beta-12-0-10-0-">Public Beta 12 (0.10.0)</h1>
@@ -244,8 +285,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Mon, 30 May 2016 17:30:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/0.10.1/LaconaBeta.zip" sparkle:version="0.10.1" sparkle:shortVersionString="Public Beta 13" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCe6342hBX9Xwcy7K2HvqocMgXAtQIVALn3nhaKLi7Ryk0OTKYMXAZkbZJ7" />
+        <pubDate>Mon, 8 Aug 2016 10:30:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.0.0/Lacona.zip" sparkle:version="1.0.0" sparkle:shortVersionString="1.0.0" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFHlCPn0+V232fG+JP0NpblZV0kdSAhUAq8+z1Tge4VG6aW+ap/2932L14lY=" />
       </item>
   </channel>
 </rss>
