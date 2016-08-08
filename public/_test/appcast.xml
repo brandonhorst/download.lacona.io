@@ -48,6 +48,7 @@
 <li>Fix a bug that did not allow &quot;schedule x from today to tomorrow&quot;</li>
 <li>Force Lacona&#39;s built-in NPM tool to use <code>~/.lacona-npm</code> as the cache directory, rather than the default <code>~/.npm</code>. This fixes some situations where pre-existing npm permissions issues could cause Addon installation/uninstallation failures for Lacona. Also, prevent other undesired interactions with npm config files.</li>
 <li>Fix a potential crash when editing theme settings for the first time.</li>
+<li>Fix a regression that ignored the &quot;Applications&quot; setting - so default setting users could not open Finder.</li>
 </ul>
 <h1 id="public-beta-13-0-10-1-">Public Beta 13 (0.10.1)</h1>
 <h2 id="fixes">Fixes</h2>
@@ -285,8 +286,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Mon, 8 Aug 2016 10:30:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.0.0/Lacona.zip" sparkle:version="1.0.0" sparkle:shortVersionString="1.0.0" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFHlCPn0+V232fG+JP0NpblZV0kdSAhUAq8+z1Tge4VG6aW+ap/2932L14lY=" />
+        <pubDate>Mon, 8 Aug 2016 10:45:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.0.0/Lacona.zip" sparkle:version="1.0.0" sparkle:shortVersionString="1.0.0" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MCwCFFlUxBYO2v2TDWQr92FKEOIww17zAhQf6QnqQGmIbLdf4tMHmCMmVZhKpQ==" />
       </item>
   </channel>
 </rss>
