@@ -6,9 +6,22 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>1.0.0</title>
+        <title>1.0.1</title>
         <description>
           <![CDATA[
+<h1 id="1-0-1">1.0.1</h1>
+<h2 id="new-features">New Features</h1>
+<ul>
+<li>Add a small activity indicator to the Addons page</li>
+</ul>
+<h2 id="changes">Changes</h1>
+<ul>
+<li>Minor text changes</li>
+</ul>
+<h2 id="fixes">Fixes</h1>
+<ul>
+<li>Make the Preferences page functional on macOS 10.12 Sierra</li>
+</ul>
 <h1 id="1-0-0">1.0.0</h1>
 <h2 id="new-features">New Features</h2>
 <ul>
@@ -286,8 +299,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Mon, 8 Aug 2016 10:45:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.0.0/Lacona.zip" sparkle:version="1.0.0" sparkle:shortVersionString="1.0.0" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MCwCFFlUxBYO2v2TDWQr92FKEOIww17zAhQf6QnqQGmIbLdf4tMHmCMmVZhKpQ==" />
+        <pubDate>Fri, 12 Aug 2016 10:30:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.0.1/Lacona.zip" sparkle:version="1.0.1" sparkle:shortVersionString="1.0.1" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFA5jUv7GDeiYAqp/bHGjKHtImEWPAhUAhbbQsvQeCUbR1EJdtlclkWWsiOo=" />
       </item>
   </channel>
 </rss>
