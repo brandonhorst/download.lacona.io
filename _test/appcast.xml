@@ -324,7 +324,7 @@
           ]]>
         </description>
         <pubDate>Tue, 13 Sep 2016 12:30:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.0.2/Lacona.zip" sparkle:version="1.0.2" sparkle:shortVersionString="1.0.2" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFA5jUv7GDeiYAqp/bHGjKHtImEWPAhUAhbbQsvQeCUbR1EJdtlclkWWsiOo=" />
+        <enclosure url="https://download.lacona.io/packages/1.0.2/Lacona.zip" sparkle:version="1.0.2" sparkle:shortVersionString="1.0.2" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFHKFSkdX58fpqB2APLJQLK0yuPJsAhUArwe8+I0Y5p+5eNm7/X+s76V4jak=" />
       </item>
   </channel>
 </rss>
