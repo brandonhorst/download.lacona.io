@@ -6,19 +6,43 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>1.0.1</title>
+        <title>1.0.2</title>
         <description>
           <![CDATA[
+<h1 id="1-0-2">1.0.2</h1>
+<h2 id="changes">Changes</h2>
+<ul>
+<li><code>lacona-cli@1.1.0</code> adds the concept of &quot;Developer Mode&quot;. Using <code>lacona dev package-name</code>, you can set a single addon to be in &quot;Developer Mode&quot;, which means that the delay and license prompt will not happen, even for unlicensed users. This will make addon development a bit easier for people seeking scholarships.</li>
+<li>Built-in Commands and Addons can now be <a href="http://docs.lacona.io/docs/advanced/translation.html">translated</a> (no translations are currently available, but they will come with time)</li>
+<li>If any of the built-in commands are installed using <a href="https://www.npmjs.com/package/lacona-cli"><code>lacona-cli</code></a>, that will supercede the built-in version. This allows developers to test fixes and translations of these commands. The built-in commands are<ul>
+<li><a href="https://github.com/laconalabs/lacona-calculate">lacona-calculate</a></li>
+<li><a href="https://github.com/laconalabs/lacona-command">lacona-command</a></li>
+<li><a href="https://github.com/laconalabs/lacona-communicate">lacona-communicate</a></li>
+<li><a href="https://github.com/laconalabs/lacona-events">lacona-events</a></li>
+<li><a href="https://github.com/laconalabs/lacona-finder">lacona-finder</a></li>
+<li><a href="https://github.com/laconalabs/lacona-itunes">lacona-itunes</a></li>
+<li><a href="https://github.com/laconalabs/lacona-osx">lacona-osx</a></li>
+<li><a href="https://github.com/laconalabs/lacona-search-internet">lacona-search-internet</a></li>
+<li><a href="https://github.com/laconalabs/lacona-settings">lacona-settings</a></li>
+<li><a href="https://github.com/laconalabs/lacona-translate">lacona-translate</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug with pressing the down arrow to navigate lists in the Preferences</li>
+<li>Fix a bug where multiple lists could be selected at the same time in the Preferences</li>
+</ul>
 <h1 id="1-0-1">1.0.1</h1>
-<h2 id="new-features">New Features</h1>
+<h2 id="new-features">New Features</h2>
 <ul>
 <li>Add a small activity indicator to the Addons page</li>
 </ul>
-<h2 id="changes">Changes</h1>
+<h2 id="changes">Changes</h2>
 <ul>
 <li>Minor text changes</li>
 </ul>
-<h2 id="fixes">Fixes</h1>
+<h2 id="fixes">Fixes</h2>
 <ul>
 <li>Make the Preferences page functional on macOS 10.12 Sierra</li>
 </ul>
@@ -299,8 +323,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Fri, 12 Aug 2016 10:30:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.0.1/Lacona.zip" sparkle:version="1.0.1" sparkle:shortVersionString="1.0.1" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFA5jUv7GDeiYAqp/bHGjKHtImEWPAhUAhbbQsvQeCUbR1EJdtlclkWWsiOo=" />
+        <pubDate>Tue, 13 Sep 2016 12:30:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.0.2/Lacona.zip" sparkle:version="1.0.2" sparkle:shortVersionString="1.0.2" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFHKFSkdX58fpqB2APLJQLK0yuPJsAhUArwe8+I0Y5p+5eNm7/X+s76V4jak=" />
       </item>
   </channel>
 </rss>
