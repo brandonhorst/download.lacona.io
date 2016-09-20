@@ -6,9 +6,25 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>1.0.2</title>
+        <title>1.0.3</title>
         <description>
           <![CDATA[
+<h1 id="1-0-3">1.0.3</h1>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Lacona will now appear in the Dock while the Preferences window is open, allowing for improved window management.</li>
+<li>Clicking the Dock icon while the Preferences window is open will no longer make the Lacona Input Bar appear.</li>
+<li>&quot;search google for lacona&quot; will now present one option instead of two.</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug where pressing &quot;Purchase Lacona...&quot; while the purchase sheet was already active would cause bad behavior and crashes.</li>
+</ul>
+<h2 id="developer-changes">Developer Changes</h2>
+<ul>
+<li>Introduced <code>fetchUserDefaults</code> to <code>lacona-api</code></li>
+<li>Addons can now extend the <code>elliptical-*</code> classes, so extensions can now provide Dates, URLs, Email Addresses, Strings, and more.</li>
+</ul>
 <h1 id="1-0-2">1.0.2</h1>
 <h2 id="changes">Changes</h2>
 <ul>
@@ -323,8 +339,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Tue, 13 Sep 2016 12:30:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.0.2/Lacona.zip" sparkle:version="1.0.2" sparkle:shortVersionString="1.0.2" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFHKFSkdX58fpqB2APLJQLK0yuPJsAhUArwe8+I0Y5p+5eNm7/X+s76V4jak=" />
+        <pubDate>Tue, 20 Sep 2016 13:45:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.0.3/Lacona.zip" sparkle:version="1.0.3" sparkle:shortVersionString="1.0.3" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCERsP3qDN7mzydQ1JJ0SNNWPGcoQIVAKh/NWTnrLyprYnXi9wCYu7lXmeq" />
       </item>
   </channel>
 </rss>
