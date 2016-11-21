@@ -6,9 +6,14 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>1.1.0</title>
+        <title>1.1.1</title>
         <description>
           <![CDATA[
+<h1 id="1-1-1">1.1.1</h1>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug that only allowed one &quot;Shortcut&quot; to be changed from the default at a time.</li>
+</ul>
 <h1 id="1-1-0">1.1.0</h1>
 <h2 id="new-features">New Features</h2>
 <ul>
@@ -390,8 +395,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Sun, 20 Nov 2016 19:15:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.1.0/Lacona.zip" sparkle:version="1.1.0" sparkle:shortVersionString="1.1.0" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MCwCFA3yJdZuZtJO+JXK5tMGxEw/z5SlAhQJej5Q6eGTKRU6R48FNQMxn6WxFg==" />
+        <pubDate>Mon, 21 Nov 2016 8:00:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.1.1/Lacona.zip" sparkle:version="1.1.1" sparkle:shortVersionString="1.1.1" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCUTJ94T1UqzmizADAcNXt0ZyJneQIUPHr7IOdeZNS9qRL9FqCYVdtH9o8=" />
       </item>
   </channel>
 </rss>
