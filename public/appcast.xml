@@ -6,9 +6,60 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>1.0.3</title>
+        <title>1.1.0</title>
         <description>
           <![CDATA[
+<h1 id="1-1-0">1.1.0</h1>
+<h2 id="new-features">New Features</h2>
+<ul>
+<li>Major revamp of Preferences. Icons make things look better, and all addons and built-in commands show Examples of how they are used. Revamped the License page, added tabs, and array preferences now show up in sheets.</li>
+<li>Added the ability to conditionally enable built-in features via Preferences. Disabling features that you do not need may improve performance.</li>
+<li>Added &quot;Context&quot; support - Lacona is now aware of the current clipboard contents, and the current Finder window (if it is foremost). This means that commands like &quot;email clipboard contents to Vicky&quot; are now possible. Or, with the <code>lacona-shell</code> Addon, &quot;run rm -rf * in {current finder directory} is now very easy&quot;. This works for URLs, Files, Directories, and text on the clipboard. This can be disabled from &#39;macOS Integration&#39; in Preferences.</li>
+<li>You can now now specify your &quot;Quick Select Modifier&quot;, which allows you to select which modifier key you use to pick an option by number. Previously, it was always set to <code>alt</code>.</li>
+<li>Added a one-time popup prompting for Contacts, Reminders, and Events access. If the user clicks no, the functions will automatically be disabled in settings.</li>
+<li>If Contacts, Reminders, and Events access are not permitted, they will automatically be disabled in the Preferences as well.</li>
+<li>The &#39;reveal in Finder&#39; command can now reveal Applications and Volumes (not just files).</li>
+<li>You can now install Addons by clicking a link from any application. Links in the form <a href="lacona-install://lacona-convert-currency"><code>lacona-install://lacona-convert-currency</code></a> will pop up an alert asking you to confirm installation. If confirmed, the Addon will automatically install. This only works for published Lacona Addons.</li>
+<li>Check out the &quot;GitHub&quot; and &quot;IFTTT&quot; addons!</li>
+</ul>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>Massive performance improvements, especially for users who have a lot of Contacts. On our test system, performance for the <code>open</code> command and all fallthroughs was increased about eightfold.</li>
+<li>Fetch some data at load time, increasing performance the very first time Lacona is called up after a restart.</li>
+<li>Small change to the way that Command Aliases work. If the alias matches the input exactly, the full replacement will be used. Now, you can shorten long, commonly used commands that do not require arguments, such as &quot;open twitter.com in Safari&quot;.</li>
+<li>Lacona now understands 24-hour time.</li>
+<li>Lacona now understands dates like &quot;July 4-5&quot;, &quot;3-5pm&quot;, and &quot;the 25th&quot;.</li>
+<li>Lacona now makes its understanding of dates a bit more explicit, by automatically adding components like &quot;at&quot;, &quot;on&quot;, and &quot;:00&quot;.</li>
+<li>Whack 17MB off the application size with minification/deduplication. Note that the majority of the large file size comes from bundling Node.js, which is required for functioning.</li>
+<li>IPC with the Node process no longer goes through the network adaptor. This improves performance, and also remove the annoying &quot;Allow Incoming Connections&quot; message that occassionally appeared on Startup.</li>
+<li>Add some attributions to the About page.</li>
+<li>&quot;Play next song&quot; and kin are now properly identified as symbols.</li>
+<li>Songs in iTunes shows the iTunes logo.</li>
+<li>Safari bookmarks now use the Safari logo</li>
+<li>Do not show duplicate options that represent the same thing (&#39;open Chrome&#39; and &#39;open Google Chrome&#39;)</li>
+<li>Prevent some nonsense inputs (&#39;open Google Chrome and Chrome&#39;)</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>The &quot;Please Purchase Lacona Pro&quot; popup and the tutorial popup will now both appear even if the Menu Bar Icon is hidden.</li>
+<li>Fix a bug that was causing the &quot;Please Purchase Lacona&quot; popup/delay to happen for some system commands.</li>
+<li>Fix &quot;enable/disable Dark Mode&quot; on OSX Sierra</li>
+<li>Selecting options using the mouse now works all the time. Due to an macOS Quirk, this has the unfortunate side-effect of making the cursor always be the normal (rather than having the text and pointer cursors). Not a huge problem, though.</li>
+</ul>
+<h2 id="developer-changes">Developer Changes</h2>
+<ul>
+<li>Update underlying node.js to v7.0.0</li>
+<li>Botched addons will no longer break everything. Addons with errors in user-defined code will simply print messages to the log file and Lacona will continue behaving as normal. If your addon is not working, try running <code>lacona logs</code>.</li>
+<li>Preferences are now stored in <code>preferences.json</code> rather than <code>config.json</code>, and they should not include a top wrapper object. This is because preferences are now Addon-specific (Addons cannot access other Addon&#39;s config).</li>
+<li>The <code>auth</code> type was added to preferences, allowing oauth2-based authentication, straight from Preferences.</li>
+<li>Addons can now specify <code>examples</code> in the <code>lacona</code> property of <code>package.json</code>.</li>
+<li>Addons can now set their own preferences programmatically using the <code>setConfig</code> function.</li>
+<li>Addons can now export a <code>hooks</code> object, which contains functions that are called at various times. Currently, the <code>onLoad</code>, <code>onLoadConfig</code>, and <code>onURLCommand</code> hooks are available. The latter two hooks are passed <code>observe</code>, <code>config</code>, and <code>setConfig</code>, so they can prefetch sources, modify config settings, and respond to URL commands if necessary.</li>
+<li>Beefed up <code>setClipboard</code> and <code>fetchClipboard</code> - they can now handle files, URLs, and multiple strings.</li>
+<li>The <code>image</code> type is now available for annotations, allowing Addons to specify annotations with an absolute file path to an image file.</li>
+<li>The <code>url</code> type is now available for annotations, allowing Addons to specify annotations with an http[s] path to an image file.</li>
+<li>Introduced the <code>symbol</code> category, which italicizes the words. This demonstrates to the user that the given input is a symbol of some sort.</li>
+</ul>
 <h1 id="1-0-3">1.0.3</h1>
 <h2 id="changes">Changes</h2>
 <ul>
@@ -339,8 +390,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Tue, 20 Sep 2016 13:45:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.0.3/Lacona.zip" sparkle:version="1.0.3" sparkle:shortVersionString="1.0.3" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCERsP3qDN7mzydQ1JJ0SNNWPGcoQIVAKh/NWTnrLyprYnXi9wCYu7lXmeq" />
+        <pubDate>Sun, 20 Nov 2016 19:15:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.1.0/Lacona.zip" sparkle:version="1.1.0" sparkle:shortVersionString="1.1.0" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MCwCFA3yJdZuZtJO+JXK5tMGxEw/z5SlAhQJej5Q6eGTKRU6R48FNQMxn6WxFg==" />
       </item>
   </channel>
 </rss>
