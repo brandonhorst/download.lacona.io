@@ -6,9 +6,16 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>1.1.1</title>
+        <title>1.1.2</title>
         <description>
           <![CDATA[
+<h1 id="1-1-2">1.1.2</h1>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug that would reset certain preferences on startup, for users upgrading from Lacona 1.0.x</li>
+<li>Fix a bug that could cause the &quot;Tutorial&quot; popover to not appear on first launch</li>
+<li>Fix the ordering of dialogs presented to the user on first launch</li>
+</ul>
 <h1 id="1-1-1">1.1.1</h1>
 <h2 id="fixes">Fixes</h2>
 <ul>
@@ -395,8 +402,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Mon, 21 Nov 2016 8:00:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.1.1/Lacona.zip" sparkle:version="1.1.1" sparkle:shortVersionString="1.1.1" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCUTJ94T1UqzmizADAcNXt0ZyJneQIUPHr7IOdeZNS9qRL9FqCYVdtH9o8=" />
+        <pubDate>Wednesday, 23 Nov 2016 14:15:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.1.2/Lacona.zip" sparkle:version="1.1.2" sparkle:shortVersionString="1.1.2" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCm8SGsrlvH7Wgu8R3MF5Qq0MXG0gIUdmBq5VTP6CCS5FAsCzh5mq+CjdU=" />
       </item>
   </channel>
 </rss>
