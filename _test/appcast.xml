@@ -6,9 +6,22 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>1.1.2</title>
+        <title>1.1.3</title>
         <description>
           <![CDATA[
+<h1 id="1-1-3">1.1.3</h1>
+<h2 id="changes">Changes</h2>
+<ul>
+<li>&quot;Launch at Login&quot; is no longer be enabled by default, to comply with <a href="https://setapp.com/">Setapp</a> guidelines. Users who have already set the setting manually will not be affected</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix a bug that prevented Launch at Login from working</li>
+<li>Fix a bug that could cause slowdowns if Spotlight returns inconsistent results</li>
+<li>Fix a bug that caused share sheets to appear in the wrong place on Retina displays</li>
+<li>Update the About text to reflect the switch to node v7.0.0</li>
+<li>Fix a bug with the links in the about text.</li>
+</ul>
 <h1 id="1-1-2">1.1.2</h1>
 <h2 id="fixes">Fixes</h2>
 <ul>
@@ -402,8 +415,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Wednesday, 23 Nov 2016 14:15:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.1.2/Lacona.zip" sparkle:version="1.1.2" sparkle:shortVersionString="1.1.2" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCm8SGsrlvH7Wgu8R3MF5Qq0MXG0gIUdmBq5VTP6CCS5FAsCzh5mq+CjdU=" />
+        <pubDate>Tuesday, 10 Jan 2017 14:35:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.1.3/Lacona.zip" sparkle:version="1.1.3" sparkle:shortVersionString="1.1.3" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MCwCFG6GTJPWesil+3U/wW5kh9YWhyyiAhQgQuZxX79Y8QHKfKEEa9Ivcq4GOw==" />
       </item>
   </channel>
 </rss>
