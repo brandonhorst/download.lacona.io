@@ -6,9 +6,14 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
       <item>
-        <title>1.1.4</title>
+        <title>1.1.8</title>
         <description>
           <![CDATA[
+<h1 id="1-1-8">1.1.8</h1>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fix Addon installation bug</li>
+</ul>
 <h1 id="1-1-4">1.1.4</h1>
 <h2 id="changes">Changes</h2>
 <ul>
@@ -425,8 +430,8 @@
 </ul>
           ]]>
         </description>
-        <pubDate>Tuesday, 10 Jan 2017 14:35:00 EST</pubDate>
-        <enclosure url="https://download.lacona.io/packages/1.1.4/Lacona.zip" sparkle:version="1.1.4" sparkle:shortVersionString="1.1.4" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MCwCFDZnp/Hk3kSCEc2RH6XTJwUH3SAuAhRwLbjdzbEJN6WghxFTBVMs3jgHDQ==" />
+        <pubDate>Tuesday, 1 Apr 2020 18:00:00 EST</pubDate>
+        <enclosure url="https://download.lacona.io/packages/1.1.8/Lacona.zip" sparkle:version="1.1.8" sparkle:shortVersionString="1.1.8" length="2482016" type="application/octet-stream" sparkle:dsaSignature="MCwCFAe6f4UuIeKGUC8aN3Lb1NoMofwqAhQg8n6UhAj68/hjhSicMc72gu3wSg==" />
       </item>
   </channel>
 </rss>
